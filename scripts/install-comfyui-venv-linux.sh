@@ -35,9 +35,6 @@ pip install -r ComfyUI/custom_nodes/ComfyUI_LayerStyle/requirements.txt
 pip install -r ComfyUI/custom_nodes/ComfyUI-Easy-Use/requirements.txt
 pip install -r ComfyUI/custom_nodes/comfyui-tensorops/requirements.txt
 
-# Create models directories if not present
-mkdir -p models/unet models/vae models/clip
-
 # Download required model files
 cd models/unet
 wget https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/flux1-dev.sft
@@ -49,8 +46,17 @@ cd ../clip
 wget https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/clip_l.safetensors
 wget https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/t5xxl_fp16.safetensors
 
+cd ../controlnet
+mkdir -p fluxunionpro
+cd fluxunionpro
+wget https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/blob/main/diffusion_pytorch_model.safetensors
+
 # Create run scripts
-cd ../..
+cd .. #controlnet
+cd ..  #models
+cd .. #comfyui
+cd ..
+
 echo "#!/bin/bash" > run_gpu.sh
 echo "cd ComfyUI" >> run_gpu.sh
 echo "source venv/bin/activate" >> run_gpu.sh
