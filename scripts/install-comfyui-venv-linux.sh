@@ -33,5 +33,3 @@ echo "cd ComfyUI" >> run_cpu.sh
 echo "source venv/bin/activate" >> run_cpu.sh
 echo "python main.py --preview-method auto --cpu" >> run_cpu.sh
 chmod +x run_cpu.sh
-
-https://github.com/vrcnx/comfyui-flux/blob/bfd5ab0046a7a1364aa59b07ef3a1a035999ebc3/install-comfyui-venv-linux.sh
