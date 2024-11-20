@@ -1,5 +1,6 @@
 git clone https://github.com/comfyanonymous/ComfyUI
-cd ComfyUI/custom_nodes
+cd ComfyUI
+cd custom_nodes
 git clone https://github.com/ltdrdata/ComfyUI-Manager
 git clone https://github.com/WASasquatch/was-node-suite-comfyui
 git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
