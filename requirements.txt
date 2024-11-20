@@ -13,20 +13,9 @@ dill
 fairscale>=0.4.4
 fal-client
 fastapi
-git+https://github.com/WASasquatch/cstr
-git+https://github.com/WASasquatch/ffmpy.git
-git+https://github.com/WASasquatch/img2texture.git
 GitPython
 google-generativeai
-https://github.com/oobabooga/llama-cpp-python-cuBLAS-wheels/releases/download/cpu/llama_cpp_python-0.2.89+cpuavx2-cp310-cp310-linux_x86_64.whl; platform_system == "Linux" and platform_machine == "x86_64" and python_version == "3.10"
-https://github.com/oobabooga/llama-cpp-python-cuBLAS-wheels/releases/download/cpu/llama_cpp_python-0.2.89+cpuavx2-cp310-cp310-win_amd64.whl; platform_system == "Windows" and python_version == "3.10"
-https://github.com/oobabooga/llama-cpp-python-cuBLAS-wheels/releases/download/cpu/llama_cpp_python-0.2.89+cpuavx2-cp311-cp311-linux_x86_64.whl; platform_system == "Linux" and platform_machine == "x86_64" and python_version == "3.11"
-https://github.com/oobabooga/llama-cpp-python-cuBLAS-wheels/releases/download/cpu/llama_cpp_python-0.2.89+cpuavx2-cp311-cp311-win_amd64.whl; platform_system == "Windows" and python_version == "3.11"
-https://github.com/oobabooga/llama-cpp-python-cuBLAS-wheels/releases/download/textgen-webui/llama_cpp_python_cuda-0.2.89+cu121-cp310-cp310-linux_x86_64.whl; platform_system == "Linux" and platform_machine == "x86_64" and python_version == "3.10"
-https://github.com/oobabooga/llama-cpp-python-cuBLAS-wheels/releases/download/textgen-webui/llama_cpp_python_cuda-0.2.89+cu121-cp310-cp310-win_amd64.whl; platform_system == "Windows" and python_version == "3.10"
-https://github.com/oobabooga/llama-cpp-python-cuBLAS-wheels/releases/download/textgen-webui/llama_cpp_python_cuda-0.2.89+cu121-cp311-cp311-linux_x86_64.whl; platform_system == "Linux" and platform_machine == "x86_64" and python_version == "3.11"
-https://github.com/oobabooga/llama-cpp-python-cuBLAS-wheels/releases/download/textgen-webui/llama_cpp_python_cuda-0.2.89+cu121-cp311-cp311-win_amd64.whl; platform_system == "Windows" and python_version == "3.11"
-huggingface_hub>=0.23.4
+huggingface-hub>=0.23.4
 hydra-core
 imageio
 inference-cli>=0.13.0
@@ -36,6 +25,7 @@ joblib
 kornia
 lark-parser
 loguru
+matrix-client==0.4.0
 matplotlib
 mediapipe
 mss
@@ -45,7 +35,6 @@ omegaconf
 onnxruntime
 opencv-contrib-python
 opencv-python
-opencv-python-headless
 opencv-python-headless[ffmpeg]
 peft>=0.12.0
 piexif
@@ -58,18 +47,12 @@ pydantic
 pymatting
 pytorch_lightning
 pyzbar
-qrcode
 qrcode[pil]
 redis
 rembg
-replicate
 rich
-scikit_image
-scikit_learn
-scikit-image
 scikit-image>=0.20.0
 scikit-learn
-Scipy
 scipy>=1.11.4
 segment-anything
 sentencepiece
@@ -80,7 +63,7 @@ torchscale
 tqdm
 transformers
 transparent-background
-typer_config
+typer
 ultralytics>=8.2.0
 wandb
 wget
