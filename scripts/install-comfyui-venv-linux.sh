@@ -18,9 +18,9 @@ git clone https://github.com/vrcnx/comfyui-flux
 python -m venv venv
 source venv/bin/activate
 python -m pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
-python -m pip install -r requirements.txt
-python -m pip install -r custom_nodes/ComfyUI-Manager/requirements.txt
-python -m pip install -r comfyui-flux/requirements.txt
+python -m pip install -r requirements.txt --verbose
+python -m pip install -r custom_nodes/ComfyUI-Manager/requirements.txt --verbose
+python -m pip install -r comfyui-flux/requirements.txt --verbose
 cd ..
 echo "#!/bin/bash" > run_gpu.sh
 echo "cd ComfyUI" >> run_gpu.sh
